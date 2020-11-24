@@ -43,7 +43,7 @@ namespace CORE_Middleware
             app.Map("/orders",
                 config =>
                 config.Use(async (context, next) =>
-                await context.Response.WriteAsync("Kullanicinin siparişleri")
+                await context.Response.WriteAsync("USER ORDERS") // Değiştirildi.
                 ));
 
             app.MapWhen(
